@@ -1,3 +1,41 @@
 baseURL = "http://kovalev.netlify.app/"
 languageCode = "ru-ru"
 title = "Персональная страница Ковалева Андрея Юрьевича"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "home"
+    name = "Главная"
+    url = "/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "teachers"
+    name = "Преподавателям"
+    url = "/teachers/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "students"
+    name = "Студентам"
+    url = "/students/"
+    weight = 30
+
+  [[menu.main]]
+    identifier = "achievements"
+    name = "Достижения"
+    url = "/achievements/"
+    weight = 40
+
+  [[menu.main]]
+    identifier = "news"
+    name = "Новости"
+    url = "/news/"
+    weight = 50
+
+  [[menu.main]]
+    identifier = "gallery"
+    name = "Галерея"
+    url = "/gallery/"
+    weight = 60

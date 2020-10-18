@@ -4,24 +4,17 @@
     </button>
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
-        </li>
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
         <li class="nav-item">
-          <a class="nav-link" href="/teachers">Преподавателям</a>
+          <a class="nav-link{{ if eq $currentPage.URL .URL }} active{{end}}" href="{{ .URL }}">
+            {{- .Name -}} 
+            {{ if eq $currentPage.URL .URL }}
+            <span class="sr-only">(current)</span>
+            {{end}}
+          </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Студентам</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Достижения</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Новости</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Галерея</a>
-        </li>
+        {{ end }}
       </ul>
     </div>
   </nav>
