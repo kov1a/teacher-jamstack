@@ -7,9 +7,9 @@
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
         <li class="nav-item">
-          <a class="nav-link{{ if eq $currentPage.URL .URL }} active{{end}}" href="{{ .URL }}">
+          <a class="nav-link{{ if eq $currentPage.RelPermalink .URL }} active{{end}}" href="{{ .URL }}">
             {{- .Name -}} 
-            {{ if eq $currentPage.URL .URL }}
+            {{ if eq $currentPage.RelPermalink .URL }}
             <span class="sr-only">(current)</span>
             {{end}}
           </a>
