@@ -7,11 +7,6 @@ collections:
   - name: 'teachers'
     label: 'Преподавателям'
     folder: 'content/teachers'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    editor:
-      preview: false
     fields:
       - { label: 'Заголовок', name: 'title', widget: 'string' }
-      - { label: 'Дата публикации', name: 'date', widget: 'datetime' }
       - { label: 'Тело', name: 'body', widget: 'markdown' }
