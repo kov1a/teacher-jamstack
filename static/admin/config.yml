@@ -30,7 +30,6 @@ collections:
     fields:
       - { label: 'Заголовок', name: 'title', widget: 'string' }
       - { label: 'Тело', name: 'body', widget: 'markdown' }
-        - name: 'news'
   - name: gallery 
     label: 'Галерея'
     folder: 'content/gallery'
