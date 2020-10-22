@@ -10,3 +10,31 @@ collections:
     fields:
       - { label: 'Заголовок', name: 'title', widget: 'string' }
       - { label: 'Тело', name: 'body', widget: 'markdown' }
+  - name: 'students'
+    label: 'Студентам'
+    folder: 'content/students'
+    fields:
+      - { label: 'Заголовок', name: 'title', widget: 'string' }
+      - { label: 'Тело', name: 'body', widget: 'markdown' }
+  - name: 'achievements'
+    label: 'Достижения'
+    folder: 'content/achiements'
+    create: true
+    fields:
+      - { label: 'Заголовок', name: 'title', widget: 'string' }
+      - { label: 'Тело', name: 'body', widget: 'markdown' }
+  - name: 'news'
+    label: 'Новости'
+    folder: 'content/news'
+    create: true
+    fields:
+      - { label: 'Заголовок', name: 'title', widget: 'string' }
+      - { label: 'Тело', name: 'body', widget: 'markdown' }
+        - name: 'news'
+  - name: gallery 
+    label: 'Галерея'
+    folder: 'content/gallery'
+    create: true
+    fields:
+      - { label: 'Заголовок', name: 'title', widget: 'string' }
+      - { label: 'Тело', name: 'body', widget: 'markdown' }
